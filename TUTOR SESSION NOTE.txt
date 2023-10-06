@@ -1,0 +1,32 @@
+
+
+Tutoring note:
+
+- Quick intro about Python
+
+
+- How do we communicate
+	* vivian.dong3313@gmail.com
+	* Through text messages
+
+
+- What you expect from a session
+	* Live coding - follow a website resources structure
+		- Read thru it first if you can
+		- Revise from website + our code during session
+	
+	* Final goal
+		- Understand Python
+			* Basic stuff
+		- 1 year
+	
+	* Session per week:
+		- Let keep one/week for now
+		- 1 hour
+		
+	* Exercise?
+		- 40 mins
+		- 20 mins - for you practice <-- 
+		- 1 hour practice outside of the class
+		
+	* Let me know if there is overlap content --> have more practice time!
