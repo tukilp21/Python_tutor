@@ -16,3 +16,5 @@ final_equation = int(math.sqrt(equation))
 
 print(final_equation)
 print(type(final_equation))
+
+
