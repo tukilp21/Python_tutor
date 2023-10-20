@@ -18,8 +18,11 @@ def print_2():
     # print default end is \n
     print("Hello", "sunny", "world", sep="__", end=" ")
 
-##########################################
+'''
+This is the print_number function
 
+'''
+##########################################
 def print_number(first_number, second_number):
     # float, double
     a = first_number
