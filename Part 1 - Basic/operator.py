@@ -5,8 +5,14 @@ Python operations
 '''
 
 ######################################################
-##########      Functions       ######################
+##########      Arithmetic Operators       ###########
 ######################################################
+
+######################################################
+def ellipse_equation(x, y, h, k, a, b):
+    term_1 = ((x - h)**2) / (a**2)
+    term_2 = ((y - k)**2) / (b**2)
+    return term_1 + term_2
 
 ######################################################
 def play_around_with_arithmetic():
@@ -21,7 +27,6 @@ def play_around_with_arithmetic():
 ######################################################   
 # basic operator
 # only do the math - because every function should be doing one thing
-
 def arithmetic(num1=1, num2=1, operation="div"):
     # Validate the number
     # Both input number should be numbers - or in other words, float or int
@@ -42,13 +47,13 @@ def arithmetic(num1=1, num2=1, operation="div"):
             elif operation == "mul":
                 return num1 * num2
             
-            elif operation == "div":
+            elif operation == "div": # this always return as a float
                 return num1 / num2
             
-            elif operation == "divf":
+            elif operation == "divf": # division (floor) - "cut" away the floating points
                 return num1 // num2
 
-            elif operation == "mod":
+            elif operation == "mod":  # modulus - return the remainder
                 return num1 % num2
             
             elif operation == "exp":
@@ -84,6 +89,39 @@ def display_division(num1, num2):
         # print(f"{dividend} = {divisor} * {quotient} + {remainder}")
         print(f"{dividend} : {divisor} = {quotient}, and we remain {remainder}: .20f")
 
+######################################################
+##########      Comparision Operators       ##########
+######################################################
+def check_even_odd(input_num):
+    remainder = input_num % 2 
+    # check
+    if remainder == 0:
+        # it is divisible by 2
+        print("this number is EVEN")
+
+    elif remainder == 1:
+        print("this number is ODD")
+
+
+def get_last_digit(input_num):
+    return input_num % 10
+
+def check_last_digit(last_digit):
+    # check the digit if it equal to {0,2,4,6,8}
+    if last_digit == 0 or last_digit == 2 or last_digit == 4 or last_digit == 6 or last_digit == 8:
+        print("this number is EVEN")
+    # elif last_digit == 2:
+    #     print("this number is EVEN")
+    # elif last_digit == 4:
+    #     print("this number is EVEN")
+    # elif last_digit == 6:
+    #     print("this number is EVEN")
+    # elif last_digit == 8:
+    #     print("this number is EVEN")
+    # remain cases
+    else:
+        print("this number is ODD")
+
 
 ######################################################
 ##########      Main code       ######################
@@ -92,9 +130,12 @@ if __name__ == "__main__":
     print("=========================")
 
     # BIG NOTE HERE: Always try to specifise the input if you know the input type
-    num1 = float( input("Enter the first number for the operation: "))
-    num2 = float( input("Enter the second number for the operation: "))
+    input_num = float(input("Enter your number to check whether it EVEN or ODD: "))
 
-    display_division(num1, num2)
+    last_digit = get_last_digit(input_num=input_num)
+    check_last_digit(last_digit=last_digit)
+
+    print("\nsecond method to check")
+    check_even_odd(input_num= input_num)
     
     print("=========================")

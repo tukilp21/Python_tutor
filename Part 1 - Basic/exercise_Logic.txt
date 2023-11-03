@@ -1,0 +1,34 @@
+
+-------------------------------------------------------------------------------------------
+Exercise 1:
+
+- Get a input string from the user --> let use input "python coding" for now
+- Check if the string length is greater than 10, first letter is "p", and last letter is "n" 
+	- Get a second input string from the user --> let use input "if else" for now
+	- Check if this string lenght is shorter than the first input length
+		- Combine to two string together (with a space in between) and print it out
+	* if not
+		- print "condition 2 is not met"
+* if not
+	- print "condition 1 is not met"
+	
+-------------------------------------------------------------------------------------------
+
+Exercise 2: Temperature conversion functiont that:
+
+- Get the input from user to see if they want to convert between Celcius to Fahrenheit or vice versa
+- Check (Validate) the input - it is a numer?
+- Apply conversion formula c/5 = f-32/9 [ where c = temperature in celsius and f = temperature in fahrenheit ]
+- return (or print) the converted value
+
+	Example case 1
+		* user type in "CF" - which the code understand to convert from C to F
+		* user type in 60
+		* code return "60°C is 140 in Fahrenheit"
+		
+	Example case 2		
+		* user type in "CF" - which the code understand to from F to C
+		* user type in abc
+		* code return "invalid input, the program ended" - or something similar saying invalid input
+		
+
