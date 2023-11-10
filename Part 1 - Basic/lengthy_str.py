@@ -9,6 +9,11 @@ print(f"Middle name: {name[1:-1]}")
 print(f"Last name: {name[-1]}")
 
 
+# solve for x
+res = 5 - 2
+
+
+
 ''' Session 1'''
 
 # str1 = "Hello World"

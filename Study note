@@ -1,0 +1,9 @@
+
+This is used as a Coding tips / Coding cheat sheet, consists of those small little tricks/tips that we learn throughout the tutoring
+
+Session 3 on string/if-else practice:
+    - Pseudo block diagram --> ideation before coding
+    - Indexing with len()-1
+    - Separate if statement --> if it clearer
+    - Using "flag" for nested if-else
+
