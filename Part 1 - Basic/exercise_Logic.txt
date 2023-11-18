@@ -1,23 +1,8 @@
 
 -------------------------------------------------------------------------------------------
-Exercise 1:
-
-- Get a input string from the user --> let use input "python coding" for now
-
-- Check if the string length is greater than 10, first letter is "p", and last letter is "n" 
-
-	- Get a second input string from the user --> let use input "if else" for now
-
-	- Check if this string lenght is shorter than the first input length
-		- Combine to two string together (with a space in between) and print it out
-	* if not
-		- print "condition 2 is not met"
-* if not
-	- print "condition 1 is not met"
-	
 -------------------------------------------------------------------------------------------
 
-Exercise 2: Temperature conversion functiont that:
+Exercise 1: Temperature conversion functiont that:
 
 - Get the operation input from user to see if they want to convert between Celcius to Fahrenheit or vice versa
 - Get the conversion number
@@ -34,5 +19,21 @@ Exercise 2: Temperature conversion functiont that:
 		* user type in "CF" - which the code understand to from F to C
 		* user type in abc
 		* code return "invalid input, the program ended" - or something similar saying invalid input
+
+-------------------------------------------------------------------------------------------
+18th November 
+
+# Exercise: Grade Calculator
+
+# Write a program that takes input for a student's score and calculates their grade.
+# The program should consider the following grading scale:
+# - A: 90-100
+# - B: 80-89
+# - C: 70-79
+# - D: 60-69
+# - F: 0-59
+
+# Your program should also perform input validation to ensure that the user
+# enters a valid numerical score between 0 and 100.
 		
 
