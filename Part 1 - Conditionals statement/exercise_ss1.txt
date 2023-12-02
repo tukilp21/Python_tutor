@@ -21,8 +21,6 @@ Exercise 1: Temperature conversion functiont that:
 		* code return "invalid input, the program ended" - or something similar saying invalid input
 
 -------------------------------------------------------------------------------------------
-18th November 
-
 # Exercise: Grade Calculator
 
 # Write a program that takes input for a student's score and calculates their grade.
@@ -35,5 +33,4 @@ Exercise 1: Temperature conversion functiont that:
 
 # Your program should also perform input validation to ensure that the user
 # enters a valid numerical score between 0 and 100.
-		
 

@@ -1,8 +1,21 @@
 
 This is used as a Coding tips / Coding cheat sheet, consists of those small little tricks/tips that we learn throughout the tutoring
 
+Steps to tackle (probably) any coding exercise
+    1. Pseudo code / Task breakdown
+    2. Satisfy the requirements
+    3. Optimise
+
+Session 3 Dec:
+    - try & except -> catch error and prevent the termination of the program
+    - boolean algebra (conditionals grouping)
+        . and
+        . or
+        . not
+    - consider the FLAG (boolean) for simple conditional statement (ask again While loop for e.g.)
+
 Session 3 on string/if-else practice:
-    - Pseudo block diagram --> ideation before coding
+    - Pseudo block diagram      --> ideation before coding
     - Indexing with len()-1
     - Separate if statement --> if it clearer
     - Using "flag" for nested if-else
