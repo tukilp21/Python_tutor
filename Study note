@@ -6,7 +6,13 @@ Steps to tackle (probably) any coding exercise
     2. Satisfy the requirements
     3. Optimise
 
-Session 3 Dec:
+------------------------------------------------------
+
+Session 9th Dec
+    - Try not to use MAGIC number - declare as constant (full CAP) instead
+    
+
+Session 3th Dec:
     - try & except -> catch error and prevent the termination of the program
     - boolean algebra (conditionals grouping)
         . and
@@ -19,4 +25,5 @@ Session 3 on string/if-else practice:
     - Indexing with len()-1
     - Separate if statement --> if it clearer
     - Using "flag" for nested if-else
+
 
