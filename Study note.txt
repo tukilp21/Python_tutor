@@ -7,6 +7,19 @@ Steps to tackle (probably) any coding exercise
     3. Optimise
 
 ------------------------------------------------------
+Control flow
+
+    1. loop
+        - WHILE loop --> define a Terminating condition
+        - FOR loop
+            * Terminating condition
+            * Manageable number of iteration (Loop through a list, an array)
+            * manipulate the data that we loop through
+        - Cool tricks
+            * range() --> define start, stop, steps
+            * enumerate() --> return BOTH value and its (numerical) order
+
+------------------------------------------------------
 
 Session 9th Dec
     - Try not to use MAGIC number - declare as constant (full CAP) instead

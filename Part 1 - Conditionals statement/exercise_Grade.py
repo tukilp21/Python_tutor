@@ -80,6 +80,7 @@ while (ask_again_flag == 1):
             pass
 
         ask_again_flag = 0 #false
+        # define condition to whether keep looping / stop
 
     except ValueError:
         print("Value Error - input again\n")

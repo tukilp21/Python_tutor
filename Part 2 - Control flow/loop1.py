@@ -1,7 +1,4 @@
-
-
 '''
-
 Main features of loops:
     - Looping - repeating codes
     - Ending condition
@@ -39,8 +36,9 @@ def print_list(target_list):
         # print("hello: ")
         ''' Recommend method'''
         item_index = target_list.index(item) + 1  # Plus one because index of a list start at 0
-        # Retur index of the specified item in the list
-        print(f"{item_index}. {item}")
+        
+        # Return index of the specified item in the list
+        print(f"{item_index}. {item} - this is in the list {target_list}")
 
         '''This is a straightforward (manual) method'''
         # item_index = item_index + 1
@@ -55,21 +53,10 @@ def print_list_v2(target_list):
 
 def print_list_v3(target_list):
     for idx, item in enumerate(target_list):
+        
         print(f"{idx + 1}. {item}")
 
 
 
-#################################################################################
-# NOTE: If the list has meaningful values - use can "reuse" it
 
-# shopping_list = ["meat", "apple", "banana", "mouse"]
-
-# # print_list_v2(shopping_list)
-# print_list_v3(shopping_list)
-
-# # add element
-# shopping_list.append("car")
-
-# print(len(shopping_list))
-# print_list(shopping_list)
 
