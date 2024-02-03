@@ -9,6 +9,12 @@ Tutoring note:
 	* vivian.dong3313@gmail.com
 	* Through text messages
 
+- Goal
+    * Finish Major Work project
+        - Software project
+        - No limited topics
+        - Could use any language
+        - By ending of the year
 
 - What you expect from a session
 	* Live coding - follow a website resources structure
