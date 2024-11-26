@@ -1,0 +1,5 @@
+[InternetShortcut]
+
+https://www.geeksforgeeks.org/pygame-tutorial/
+
+https://www.pygame.org/wiki/tutorials 
