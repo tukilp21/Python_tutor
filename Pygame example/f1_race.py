@@ -27,6 +27,16 @@ def draw_track():
 draw_track()
 
 # --- Create Car ---
+# screen.register_shape("f1_car.png")  # Load custom shape
+# # --- Create F1 Car ---
+# car = turtle.Turtle()
+# car.shape("f1_car.png")  # Use image instead of default shape
+# car.penup()
+# car.speed(0)
+# car.goto(-250, -180)
+# car.setheading(0)
+
+# NOTE: triangle shape version :)
 car = turtle.Turtle()
 car.shape("triangle")
 car.color("red")
