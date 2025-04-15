@@ -5,7 +5,7 @@ import time
 # --- Setup Screen ---
 screen = turtle.Screen()
 screen.title("Turtle Coordinate Explorer")
-screen.setup(width=600, height=600)
+screen.setup(width=700, height=700)
 screen.setworldcoordinates(-5, -5, 5, 5)
 screen.bgcolor("white")
 
@@ -39,12 +39,14 @@ grid_drawer.pendown()
 grid_drawer.goto(0, 5)
 grid_drawer.penup()
 
-# Axis Labels
+# Axis Labels + Axis Direction Letters
 labeler = turtle.Turtle()
 labeler.hideturtle()
 labeler.penup()
 labeler.speed(0)
 labeler.color("black")
+
+# Tick labels
 for i in range(-5, 6):
     if i != 0:
         labeler.goto(i, 0.2)
@@ -52,6 +54,12 @@ for i in range(-5, 6):
         labeler.goto(0.3, i)
         labeler.write(str(i), align="left", font=("Arial", 8, "normal"))
 
+# Axis names
+labeler.goto(4.5, 0.3)
+labeler.write("X", align="center", font=("Arial", 12, "bold"))
+
+labeler.goto(0.3, 4.5)
+labeler.write("Y", align="center", font=("Arial", 12, "bold"))
 # --- Player Turtle ---
 player = turtle.Turtle()
 player.shape("turtle")
@@ -107,7 +115,7 @@ def mode_learning():
     x, y = 0, 0
     player.goto(x, y)
 
-    print("🎓 Welcome to Learning Mode!")
+    print("\n--------------------------\n🎓 Welcome to Learning Mode!")
     print("Guess the coordinates of the dot near your turtle.")
     print("Get 3 correct in a row to increase difficulty!\n")
 
@@ -179,6 +187,11 @@ def mode_learning():
         if (2 * level + 1) > 11:  # max 11x11 fits grid [-5, 5]
             level = 5
 
+        # exit
+        if guess_x == "q"or guess_y == "q":
+            print("👋 Goodbye!")
+            break 
+
 ##########################################
 # --- Mode 2: Treasure Hunt ---
 ##########################################
@@ -223,7 +236,7 @@ def mode_treasure():
 
         attempts += 1
 
-    print("🏴‍☠️ Welcome to Treasure Hunt Mode!")
+    print("\n--------------------------\n🏴‍☠️ Welcome to Treasure Hunt Mode!")
     print("Avoid traps and find the treasure!")
     print("Use coordinates to move. If you step on ☠️, it's game over.")
 
@@ -257,8 +270,6 @@ def mode_treasure():
     time.sleep(3)
     screen.bye()
 
-
-
 # --- Mode Selection ---
 print("🐢 Welcome to Turtle Coordinate Explorer!")
 print("Choose your mode:")
@@ -266,7 +277,7 @@ print("1️⃣  Learning Mode (Guessing Coordinates)")
 print("2️⃣  Treasure Hunt Mode (Move the Turtle)")
 
 while True:
-    choice = input("Enter 1 or 2 to select mode: ").strip()
+    choice = input("\n--------------------------\nEnter 1 or 2 to select mode: ").strip()
     if choice == "1":
         mode_learning()
         break
